@@ -1,0 +1,6 @@
+{
+    "local": "",
+    "remote_stage": "",
+    "remote_production": "mongodb+srv://entissar:entissar52998058@cluster0.i8qer.mongodb.net/opticat_db?retryWrites=true&w=majority",
+    "test":"mongodb://localhost:27017/opticat_db"
+}
