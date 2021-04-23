@@ -19,12 +19,9 @@ app.use(express.urlencoded({
   extended: true
 }));
 
-app.use('/', indexRouter);
+
 app.use('/api/v1/users', usersRouter);
-app.use('/api/v1/customers', customerRouter);
-app.use('/api/v1/upload', uploadRouter);
-app.use('/api/v1/articles', articlesRouter);
-app.use('/api/v1/gallery', galleryRouter);
+
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use(express.static(path.join(__dirname, 'public')));

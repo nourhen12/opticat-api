@@ -10,9 +10,9 @@ const userService = require('../services/user-service')(User);
 
 
 
-
+// [check('email').isEmail()]
 // POST /register
-router.post('/register', [check('email').isEmail()], async function (req, res, next) {
+router.post('/register', async function (req, res, next) {
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
       res.status(422).json({

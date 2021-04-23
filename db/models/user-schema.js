@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const beautifyUnique = require('mongoose-beautiful-unique-validation');
 const bcrypt = require('bcrypt');
 const saltRounds = 10;
-const Customer = require('./customer-schema');
+
 
 
 
